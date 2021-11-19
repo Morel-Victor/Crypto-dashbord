@@ -9,70 +9,32 @@ import { useN03TextInfoContentStyles } from '@mui-treasury/styles/textInfoConten
 import prenode from '../assets/pre-node.png';
 
 const useStyles = makeStyles(() => ({
-    root: {
-        maxWidth: 500,
-        backgroundColor: '#1A2B3C',
-
-    },
-    content: {
-        padding: 24,
-        color: 'white'
-    },
+  root: {
+    maxWidth: 500,
+    backgroundColor: '#1A2B3C',
+  },
+  content: {
+    padding: 24,
+    color: 'white',
+  },
 }));
 
 export const NodeCard = React.memo(function ProjectCard() {
+  const styles = useN03TextInfoContentStyles();
+  const cardStyles = useStyles();
 
-    const styles = useN03TextInfoContentStyles();
-    const cardStyles = useStyles();
-
-    return (
-        <Card className={cx(cardStyles.root)}
-              elevation={0}
-        >
-            <BrandCardHeader
-                image={prenode}
-                extra={'Node n° 1'}
-            />
-            <CardContent className={cardStyles.content}>
-                <TextInfoContent
-                    classes={styles}
-                    overline={'PRESEARCH'}
-                    heading={'Stats :'}
-                />
-            </CardContent>
-        </Card>
-    );
+  return (
+    <Card className={cx(cardStyles.root)} elevation={0}>
+      <BrandCardHeader image={prenode} extra={'Node n° 1'} />
+      <CardContent className={cardStyles.content}>
+        <TextInfoContent
+          classes={styles}
+          overline={'PRESEARCH'}
+          heading={'Stats :'}
+        />
+      </CardContent>
+    </Card>
+  );
 });
 
-export default NodeCard
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default NodeCard;
