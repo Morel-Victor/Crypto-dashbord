@@ -3,7 +3,7 @@ import axios from 'axios';
 import Coin from '../components/Coin';
 import '../components/Coin.css';
 
-function Markets() {
+export default function Markets() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
 
@@ -39,7 +39,6 @@ function Markets() {
           />
         </form>
       </div>
-
       {filteredCoins.map((coin) => {
         return (
           <Coin
@@ -56,5 +55,3 @@ function Markets() {
     </div>
   );
 }
-
-export default Markets;

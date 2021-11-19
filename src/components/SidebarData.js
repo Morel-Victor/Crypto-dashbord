@@ -21,7 +21,7 @@ export const SidebarData = [
   {
     title: 'Node',
     path: '/nodes',
-    icon: <SiIcons.SiNodeRed />,
+    icon: <SiIcons.SiNodered />,
     cName: 'nav-text',
   },
   {

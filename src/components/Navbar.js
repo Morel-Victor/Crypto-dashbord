@@ -26,11 +26,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Navbar() {
+export default function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -84,5 +84,3 @@ function Navbar() {
     </>
   );
 }
-
-export default Navbar;

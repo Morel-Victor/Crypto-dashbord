@@ -1,6 +1,13 @@
 import React from 'react';
 
-const Coin = ({ name, image, symbol, price, volume, priceChange1D }) => {
+export default function Coin({
+  name,
+  image,
+  symbol,
+  price,
+  volume,
+  priceChange1D,
+}) {
   return (
     <div className='coin-container'>
       <div className='coin-row'>
@@ -21,6 +28,4 @@ const Coin = ({ name, image, symbol, price, volume, priceChange1D }) => {
       </div>
     </div>
   );
-};
-
-export default Coin;
+}
