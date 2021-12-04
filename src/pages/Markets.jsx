@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import MarketSummaryItem from '../components/MarketSummaryItem';
-import MarketItem from '../components/MarketsItem';
+import MarketSummaryItem from '../components/MarketsSummaryItems/MarketSummaryItem';
+import MarketItem from '../components/Markets/MarketsItem';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   item: {},
 });
 
-export default function Markets() {
+export default function Markets({ name }) {
   const classes = useStyles();
 
   return (
@@ -26,7 +26,7 @@ export default function Markets() {
           </Grid>
         </Grid>
         <Grid item xs={12} sm={5} md={5} lg={4}>
-          <MarketSummaryItem />
+          <MarketSummaryItem name={name} />
         </Grid>
       </Grid>
     </Container>

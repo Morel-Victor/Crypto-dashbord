@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import BrandCardHeader from '@mui-treasury/components/cardHeader/brand';
 import TextInfoContent from '@mui-treasury/components/content/textInfo';
 import { useN03TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n03';
-import prenode from '../assets/pre-node.png';
+import prenode from '../../assets/pre-node.png';
 
 const useStyles = makeStyles(() => ({
   root: {

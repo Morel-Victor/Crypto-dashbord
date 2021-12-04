@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Coin from '../components/Coin';
-import '../components/Coin.css';
+import Coin from '../Coin/index.jsx';
 
 export default function Markets() {
   const [coins, setCoins] = useState([]);

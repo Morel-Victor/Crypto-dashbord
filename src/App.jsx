@@ -1,16 +1,15 @@
-import React from 'react';
-import './App.css';
-import './components/Navbar.css';
-import Navbar from './components/Navbar';
+import { GlobalStyle } from './GlobalStyle';
+import Navbar from './components/Navbar/index';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Markets from './pages/Markets';
-import Node from './pages/Node';
-import Stacking from './pages/Stacking';
+import Home from './pages/Home.jsx';
+import Markets from './pages/Markets.jsx';
+import Node from './pages/Node.jsx';
+import Stacking from './pages/Stacking.jsx';
 
-function App() {
+export default function App() {
   return (
     <>
+      <GlobalStyle />
       <Router>
         <Navbar />
         <Switch>
@@ -23,5 +22,3 @@ function App() {
     </>
   );
 }
-
-export default App;

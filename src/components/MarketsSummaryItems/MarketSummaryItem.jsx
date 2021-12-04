@@ -1,4 +1,3 @@
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -20,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MarketSummaryItem() {
+export default function MarketSummaryItem({ name }) {
   const classes = useStyles();
 
   return (
@@ -38,6 +37,7 @@ export default function MarketSummaryItem() {
         </Typography>
         <Typography variant='subtitle2'>
           <hr />
+          {name}
         </Typography>
         <Grid container>
           <Grid item xs={11} sm={11} md={11} lg={11}>
