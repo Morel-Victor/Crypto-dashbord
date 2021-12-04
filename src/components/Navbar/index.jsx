@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   navbar: {
     position: 'sticky',
-    height: 80,
+    height: 60,
     display: 'flex',
     justifyContent: 'start',
     alignItems: 'center',
